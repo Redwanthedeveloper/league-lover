@@ -9,6 +9,7 @@ const League = ({ league }) => {
   return (
     <>
       <Link className='btn__link' to={`/league/${league.idLeague}`}>
+        {/* <Card.Img variant='top' src={`${league.strBadge}`} /> */}
         <Card className='my-3 text-center league__card'>
           <Card.Body>
             <Card.Title className='text-center '>

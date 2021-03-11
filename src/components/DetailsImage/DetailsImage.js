@@ -8,9 +8,7 @@ const DetailsImage = ({ leagueDetails }) => {
         src={
           leagueDetails.strGender === `Male`
             ? `/images/male.png`
-            : leagueDetails.strGender === `Female`
-            ? `/images/female.png`
-            : ''
+            : `/images/female.png`
         }
         className='details__image'
       />

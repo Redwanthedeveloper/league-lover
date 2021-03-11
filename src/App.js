@@ -9,7 +9,6 @@ import NotFound from './screens/NotFound';
 function App() {
   return (
     <Router>
-      <Banner />
       <main>
         <Switch>
           <Route path='/' exact component={HomeScreen} />

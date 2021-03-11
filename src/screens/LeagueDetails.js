@@ -1,11 +1,22 @@
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import {
+  faFacebookF,
+  faFacebookSquare,
+  faTwitter,
+  faTwitterSquare,
+  faYoutube,
+  faYoutubeSquare,
+} from '@fortawesome/free-brands-svg-icons';
+
 import React, { useEffect, useState } from 'react';
 import { Col, Container, Image, Row } from 'react-bootstrap';
 import { useParams } from 'react-router';
+import Banner from '../components/Banner/Banner';
 import Details from '../components/Details/Details';
 import DetailsImage from '../components/DetailsImage/DetailsImage';
 import DetailsText from '../components/DetailsText/DetailsText';
 
-const LeagueDetails = ({ match }) => {
+const LeagueDetails = () => {
   const [leagueDetails, setLeagueDetails] = useState([]);
   const { leagueId } = useParams();
   useEffect(() => {
@@ -18,6 +29,7 @@ const LeagueDetails = ({ match }) => {
 
   return (
     <>
+      <Banner leagueDetails={leagueDetails} />
       <Container>
         <Row
           style={{
@@ -41,10 +53,36 @@ const LeagueDetails = ({ match }) => {
         </Row>
         <Row>
           <Col md={12} className='text-center '>
-            {' '}
-            <Image src='/icons/twitter.png' fluid className='icons' />
-            <Image src='/icons/facebook.png' fluid className='icons' />
-            <Image src='/icons/youtube.png' fluid className='icons' />
+            <a
+              href={
+                leagueDetails.strTwitter
+                  ? `http://${leagueDetails.strTwitter}`
+                  : '/'
+              }
+              className='icons'
+            >
+              <FontAwesomeIcon icon={faTwitterSquare}> </FontAwesomeIcon>
+            </a>
+            <a
+              href={
+                leagueDetails.strFacebook
+                  ? `http://${leagueDetails.strFacebook}`
+                  : '/'
+              }
+              className='icons'
+            >
+              <FontAwesomeIcon icon={faFacebookSquare}> </FontAwesomeIcon>
+            </a>
+            <a
+              href={
+                leagueDetails.strYoutube
+                  ? `http://${leagueDetails.strYoutube} `
+                  : '/'
+              }
+              className='icons'
+            >
+              <FontAwesomeIcon icon={faYoutubeSquare}> </FontAwesomeIcon>
+            </a>
           </Col>
         </Row>
       </Container>

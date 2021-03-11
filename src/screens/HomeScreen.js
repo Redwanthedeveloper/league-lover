@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { Col, Container, Row } from 'react-bootstrap';
+import Banner from '../components/Banner/Banner';
 import League from '../components/League/League';
 
 const HomeScreen = () => {
@@ -14,6 +15,14 @@ const HomeScreen = () => {
 
   return (
     <>
+      <div
+        className='home__banner'
+        style={{ backgroundImage: `url('/images/banner.png')` }}
+      >
+        <div className='banner__text'>
+          <h1 className='text center'>League Lover</h1>
+        </div>
+      </div>
       <Container>
         <Row>
           {leagues.map((league) => {
