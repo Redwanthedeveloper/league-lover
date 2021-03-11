@@ -1,15 +1,12 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {
-  faFacebookF,
   faFacebookSquare,
-  faTwitter,
   faTwitterSquare,
-  faYoutube,
   faYoutubeSquare,
 } from '@fortawesome/free-brands-svg-icons';
 
 import React, { useEffect, useState } from 'react';
-import { Col, Container, Image, Row } from 'react-bootstrap';
+import { Col, Container, Row } from 'react-bootstrap';
 import { useParams } from 'react-router';
 import Banner from '../components/Banner/Banner';
 import Details from '../components/Details/Details';

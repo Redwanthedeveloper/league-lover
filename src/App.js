@@ -1,9 +1,7 @@
 import './App.css';
-
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import HomeScreen from './screens/HomeScreen';
 import LeagueDetails from './screens/LeagueDetails';
-import Banner from './components/Banner/Banner';
 import NotFound from './screens/NotFound';
 
 function App() {

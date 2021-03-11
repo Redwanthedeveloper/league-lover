@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from 'react';
 import { Col, Container, Row } from 'react-bootstrap';
-import Banner from '../components/Banner/Banner';
 import League from '../components/League/League';
 
 const HomeScreen = () => {

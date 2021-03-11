@@ -1,5 +1,4 @@
 import React from 'react';
-import { Image } from 'react-bootstrap';
 import './Banner.css';
 const Banner = ({ leagueDetails }) => {
   const banner = leagueDetails.strBanner;
