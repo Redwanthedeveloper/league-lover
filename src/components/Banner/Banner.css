@@ -1,0 +1,11 @@
+.banner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 360px;
+  background-size: cover;
+}
+.banner__text h1 {
+  color: #ffffff;
+  font-weight: bold !important;
+}

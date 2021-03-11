@@ -1,0 +1,22 @@
+.card__title {
+  font-weight: bold !important;
+  color: #000000;
+}
+
+.card__body {
+  font-weight: 500 !important;
+  color: #656565;
+}
+
+.card__btn {
+  background: rgb(220 78 78) !important;
+}
+
+.btn__link {
+  color: #fff;
+}
+
+.league__card {
+  box-shadow: 0px 4px 15px 0px #0000000d !important;
+  border: none;
+}
