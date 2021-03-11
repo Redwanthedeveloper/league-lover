@@ -11,6 +11,7 @@ const DetailsImage = ({ leagueDetails }) => {
             : `/images/female.png`
         }
         className='details__image'
+        fluid
       />
     </>
   );

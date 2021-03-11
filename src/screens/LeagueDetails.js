@@ -28,21 +28,24 @@ const LeagueDetails = () => {
     <>
       <Banner leagueDetails={leagueDetails} />
       <Container>
-        <Row
+        <div
+          className='details__wrapper'
           style={{
             backgroundColor: 'rgb(220 78 78)',
-            padding: '40px 20px',
+            padding: '20px 20px',
             borderRadius: '15px',
             marginBottom: '20px',
           }}
         >
-          <Col md={6}>
-            <Details leagueDetails={leagueDetails} />
-          </Col>
-          <Col md={6}>
-            <DetailsImage leagueDetails={leagueDetails} />
-          </Col>
-        </Row>
+          <Row>
+            <Col md={6}>
+              <Details leagueDetails={leagueDetails} />
+            </Col>
+            <Col md={6}>
+              <DetailsImage leagueDetails={leagueDetails} />
+            </Col>
+          </Row>
+        </div>
         <Row>
           <Col md={12} style={{ padding: '0px !important' }}>
             <DetailsText />

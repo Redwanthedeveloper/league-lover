@@ -13,9 +13,9 @@ const Details = ({ leagueDetails }) => {
 
   return (
     <>
-      <h2 className='list__heading mb-3 '>{leagueDetails.strLeague}</h2>
+      <h2 className='list__heading mb-2 '>{leagueDetails.strLeague}</h2>
       <li className='list__item'>
-        <Image src='/icons/found.png' /> {foundedDate}
+        <Image src='/icons/found.png' /> Founded: {foundedDate}
       </li>
       <li className='list__item'>
         <Image src='/icons/flag.png' /> Country: {leagueDetails.strCountry}
